@@ -1,0 +1,56 @@
+$deepBlue: #002D63;
+$blue: #00A1E5;
+$lightGrey: #F5F5F5;
+$white: #fff;
+$fontGrey: #757575;
+$fontLightGrey: #333;
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin box {
+    padding: 20px; 
+    margin-bottom: 7px;
+    border-radius: 5px;
+    background: #fff;
+    overflow: hidden; 
+ 
+    .title {
+        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+ 
+        span{
+            float:right;
+            font-size:12px;
+            color:$deepBlue;
+        }
+    }
+ }
+
+$fontsize10: 0.483rem;
+$fontsize12: 0.58rem;
+$fontsize14: 0.676rem;
+$fontsize15: 0.724rem;
+$fontsize16: 0.773rem;
+$size30: 1.449rem;
+$size40: 1.932rem;
+$size50: 2.415rem;
+$size55: 2.657rem;
+$size60: 2.898rem; 
+
+.el-pagination.is-background .el-pager li:not(.disabled).active{
+    background: $deepBlue;
+  }
+  
+ .el-pagination.is-background .btn-next.disabled, 
+ .el-pagination.is-background .btn-next:disabled, 
+ .el-pagination.is-background .btn-prev.disabled, 
+ .el-pagination.is-background .btn-prev:disabled, 
+ .el-pagination.is-background .el-pager li.disabled{
+     color:$deepBlue;;
+ }
